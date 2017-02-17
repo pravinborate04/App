@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_insight"
+            android:icon="@drawable/insights"
+            android:title="Insight" />
+        <item
+            android:id="@+id/nav_device"
+            android:icon="@drawable/device"
+            android:title="Device" />
+        <item
+            android:id="@+id/nav_cities"
+            android:icon="@drawable/cities"
+            android:title="Cities" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/events"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_cohort"
+            android:icon="@drawable/cohort"
+            android:title="Cohort" />
+        <item
+            android:id="@+id/nav_crash_report"
+            android:icon="@drawable/crash_reports"
+            android:title="Crash Reports" />
+        <item
+            android:id="@+id/nav_screen_analytics"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Screen Analytics" />
+       <!-- <item
+            android:id="@+id/nav_campains"
+            android:icon="@drawable/campaign"
+            android:title="Campains" />
+
+        <item
+            android:id="@+id/nav_user_data"
+            android:icon="@drawable/device"
+            android:title="User Data" />-->
+        <item
+            android:id="@+id/nav_user_signOut"
+            android:title="Sign Out" />
+    </group>
+</menu>

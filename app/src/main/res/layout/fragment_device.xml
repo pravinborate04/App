@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mastek.appengage.device.DeviceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spnrDeviceType1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/box_filter"
+            android:layout_marginRight="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgCalender1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/box_filter"
+            android:gravity="center"
+            android:src="@drawable/ic_action_name" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnDateRange1"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabDevices"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

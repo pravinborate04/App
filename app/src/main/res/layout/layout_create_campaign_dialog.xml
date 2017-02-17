@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relCampain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linCampaignName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campaign" />
+
+            <EditText
+                android:id="@+id/edtCampaignName"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of your campaigns" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linCampaignCreative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creative" />
+
+            <EditText
+                android:id="@+id/edtCampaingMessageTitle"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message Title" />
+
+            <EditText
+                android:id="@+id/edtCampaingMessageBody"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Campaign massage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linAudience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audience" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who Should receive this push campaign" />
+
+            <RadioGroup
+                android:id="@+id/radioGrpAudience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtnEveryone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EveryOne" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnNewAudience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Audience" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="visible"
+                android:id="@+id/linAudienceSelectiveAudience1">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrAudienceType1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrType1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2" />
+
+                <TextView
+                    android:id="@+id/addType1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:id="@+id/linAudienceSelectiveAudience2">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrAudienceType2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrType2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/addType2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/deleteType2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:id="@+id/linAudienceSelectiveAudience3">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrAudienceType3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrType3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/addType3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/deleteType3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="delete"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:id="@+id/linAudienceSelectiveAudience4">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrAudienceType4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrType4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/addType4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/deleteType4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="delete"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:id="@+id/linAudienceSelectiveAudience5">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrAudienceType5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrType5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/addType5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/deleteType5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="delete"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:id="@+id/linAudienceSelectiveAudience6">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrAudienceType6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spnrType6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/addType6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/deleteType6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="delete"
+                    android:gravity="center"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnNextCampainName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relCampain"
+        android:text="Next"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/mdtp_white"
+        android:textAllCaps="false" />
+</RelativeLayout>

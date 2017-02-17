@@ -1,0 +1,29 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.mastek.appengage.device.manufacturer.ManufacturerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechartType"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:isScrollContainer="false"
+            app:theme="@style/Base.TextAppearance.AppCompat.Headline" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechartType1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:isScrollContainer="false"
+            app:theme="@style/Base.TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+</ScrollView>

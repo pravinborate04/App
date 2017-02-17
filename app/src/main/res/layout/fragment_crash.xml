@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mastek.appengage.crash.CrashPieChartFragment">
+
+    <ImageView
+        android:id="@+id/imgCalenderCrash1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_filter"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:src="@drawable/ic_action_name" />
+
+    <TextView
+        android:id="@+id/btnDateRangeCrash1"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linCrash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Total Crashes"
+                android:textAllCaps="true"
+                android:textColor="@color/mdtp_dark_gray"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartTotalCrash"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:isScrollContainer="false"
+                app:theme="@style/Base.TextAppearance.AppCompat.Headline" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/mdtp_dark_gray" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Total Crashes By Manufacturer"
+                android:textAllCaps="true"
+                android:textColor="@color/mdtp_dark_gray"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartCrashByMnu"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:isScrollContainer="false"
+                app:theme="@style/Base.TextAppearance.AppCompat.Headline" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/mdtp_dark_gray" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Total Crashes By Platform"
+                android:textAllCaps="true"
+                android:textColor="@color/mdtp_dark_gray"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartCrashByPf"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:isScrollContainer="false"
+                app:theme="@style/Base.TextAppearance.AppCompat.Headline" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/mdtp_dark_gray" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Total Crashes By OS Version"
+                android:textAllCaps="true"
+                android:textColor="@color/mdtp_dark_gray"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartCrashByOsv"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:isScrollContainer="false"
+                app:theme="@style/Base.TextAppearance.AppCompat.Headline" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

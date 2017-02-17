@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.mastek.appengage.screen_analytics.ScreenAnalyticsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spnrDeviceTypeSA1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/box_filter"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+
+                />
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spnrDevicePlatformSA1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/box_filter"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgCalenderSA1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/box_filter"
+                android:gravity="center"
+                android:src="@drawable/ic_action_name" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnDateRangeSA1"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerScreens"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        >
+    </android.support.v4.view.ViewPager>
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>-->
+
+
+</LinearLayout>
